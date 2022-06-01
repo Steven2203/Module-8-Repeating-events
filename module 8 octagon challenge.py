@@ -10,6 +10,16 @@
 ##Importing the turtle module.
 import turtle as tl
 
+tl.title("Polygon / Object creater with turtle")
+textInput = input("How manny sides does the object have?")
+textInput = int(textInput)
+
+for steps in range(textInput):
+    tl.bgcolor("grey")
+    tl.color("Blue")
+    tl.forward(100)
+    tl.right(360 / textInput)
+
 ##Using the turtle functions available to draw an octagon manually.
 
 """
@@ -35,9 +45,11 @@ tl.forward(30)
 
 """
 for steps in range(8):
+    tl.bgcolor('grey')
     tl.color('blue')
     tl.forward(30)
     tl.right(45)
 """
-##Using a nested loop to print an extra object inside the octagon.
+
+
 
